@@ -23,8 +23,9 @@
 		methods: {
 			clickImg() {
 				uni.showToast({
-					title: "uniapp",
-					image: "/static/logo.png"
+					title: "錯誤",
+					icon: "error",
+					mask: true
 				})
 			}
 		}

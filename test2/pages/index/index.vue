@@ -7,8 +7,7 @@
 		<view>
 			<navigator url="/pages/demo1/demo1">跳轉到Demo1</navigator>
 		</view>
-		<view class="box">
-
+		<view class="box" @click="showModal">
 		</view>
 	</view>
 </template>
@@ -51,6 +50,26 @@
 						animationDuration: 900 // 動畫持續時間，單位：毫秒
 					})
 				}, 500)
+			},
+			showModal() {
+				uni.showModal({
+					title: "是否繼續操作?",
+					// cancelText: "不要",
+					// confirmText: "要",
+					success: function(res) {
+						if (res.confirm) {
+							console.log('用户点击确定');
+						} else if (res.cancel) {
+							console.log('用户点击取消');
+						}
+					},
+					// success: res => {
+					// 	console.log(res);
+					// },
+					// fail: err => {
+					// 	console.log(err);
+					// }
+				})
 			}
 		}
 	}

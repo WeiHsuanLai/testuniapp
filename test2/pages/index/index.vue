@@ -52,23 +52,31 @@
 				}, 500)
 			},
 			showModal() {
+				// uni.showModal({
+				// 	title: "是否繼續操作?",
+				// 	// cancelText: "不要",
+				// 	// confirmText: "要",
+				// 	success: function(res) {
+				// 		if (res.confirm) {
+				// 			console.log('用户点击确定');
+				// 		} else if (res.cancel) {
+				// 			console.log('用户点击取消');
+				// 		}
+				// 	},
+				// success: res => {
+				// 	console.log(res);
+				// },
+				// fail: err => {
+				// 	console.log(err);
+				// }
+
 				uni.showModal({
-					title: "是否繼續操作?",
-					// cancelText: "不要",
-					// confirmText: "要",
-					success: function(res) {
-						if (res.confirm) {
-							console.log('用户点击确定');
-						} else if (res.cancel) {
-							console.log('用户点击取消');
-						}
-					},
-					// success: res => {
-					// 	console.log(res);
-					// },
-					// fail: err => {
-					// 	console.log(err);
-					// }
+					title: "手機驗證",
+					editable: true,
+					placeholderText: "請輸入手機號碼",
+					success: res => {
+						console.log(res);
+					}
 				})
 			}
 		}

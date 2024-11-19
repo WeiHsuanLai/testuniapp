@@ -84,6 +84,14 @@
 			change() {
 				return this.title.toLocaleUpperCase()
 			}
+		},
+		// mounted() {
+		// 	// query 為挾帶參數 wd 為參數名稱
+		// 	console.log("this.$route=", this.$route.query.wd);
+		// }
+		onLoad(e) {
+			console.log(e);
+			console.log("getCurrentPages=", getCurrentPages())
 		}
 	}
 </script>

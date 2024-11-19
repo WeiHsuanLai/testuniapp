@@ -1,6 +1,6 @@
 <template>
 	<view class="out">
-		<navigator url="/pages/demo4/demo4">跳轉demo4</navigator>
+		<navigator url="/pages/demo4/demo4?wd=uniapp">跳轉demo4</navigator>
 		<view style="width: 200rpx;height: 200rpx; background:pink" @click="goDemo4">goDemo4</view>
 		<view style="width: 200rpx;height: 200rpx; background:blue" @click="closeDemo4">closeDemo4</view>
 		<view style="width: 200rpx;height: 200rpx; background:red" @click="reLaunch">reLaunch</view>
@@ -91,7 +91,7 @@
 		methods: {
 			goDemo4() {
 				uni.navigateTo({
-					url: "/pages/demo4/demo4",
+					url: "/pages/demo4/demo4?wd=uni-app&author=youtube",
 
 					// 跳轉成功訊息
 					// success: res => {
@@ -104,26 +104,26 @@
 					// },
 
 					// 無論失敗或成功都會發出訊息
-					complete: res => {
-						console.log(res);
-					}
+					// complete: res => {
+					// 	console.log(res);
+					// }
 				})
 			},
 			closeDemo4() {
 				uni.redirectTo({
 					url: "/pages/demo4/demo4",
-					complete: res => {
-						console.log(res);
-					}
+					// complete: res => {
+					// 	console.log(res);
+					// }
 				})
 			},
 			reLaunch() {
 				// reLaunch 可以帶參數，但無法返回上個頁面
 				uni.reLaunch({
 					url: "/pages/about/about",
-					complete: res => {
-						console.log(res);
-					}
+					// complete: res => {
+					// 	console.log(res);
+					// }
 				})
 			}
 		}

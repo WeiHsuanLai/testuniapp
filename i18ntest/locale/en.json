@@ -1,0 +1,11 @@
+{
+	"index.meApp": "MyApp",
+	"index.title": "App Dev",
+	"locale.en": "English",
+	"locale.tw": "繁體中文",
+	"locale.jp": "日本語",
+	"index.hello": "hello",
+	"tabBar.home": "home",
+	"tabBar.user": "user",
+	"showModal": "showModal"
+}

@@ -1,0 +1,6 @@
+{
+	"common": {
+		"uni.showModal.confirm": "確定",
+		"uni.showModal.cancel": "不確定"
+	}
+}

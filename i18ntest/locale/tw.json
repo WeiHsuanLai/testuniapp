@@ -1,0 +1,11 @@
+{
+	"index.meApp": "我的App",
+	"index.title": "App 開發",
+	"locale.en": "English",
+	"locale.tw": "繁體中文",
+	"locale.jp": "日本語",
+	"index.hello": "你好",
+	"tabBar.home": "首頁",
+	"tabBar.user": "我的",
+	"showModal": "按鈕"
+}

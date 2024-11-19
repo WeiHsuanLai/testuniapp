@@ -1,0 +1,6 @@
+{
+	"common": {
+		"uni.showModal.confirm": "OK",
+		"uni.showModal.cancel": "NotOK"
+	}
+}

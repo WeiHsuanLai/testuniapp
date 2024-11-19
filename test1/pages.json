@@ -1,0 +1,86 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首頁"
+			}
+		},
+		{
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "新聞列表"
+			}
+		},
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "關於我們"
+			}
+		},
+		{
+			"path": "pages/demo/demo",
+			"style": {
+				"navigationBarTitleText": "demo"
+			}
+		},
+		{
+			"path": "pages/demo2/demo2",
+			"style": {
+				"navigationBarTitleText": "demo2"
+			}
+		},
+		{
+			"path": "pages/demo3/demo3",
+			"style": {
+				"navigationBarTitleText": "demo3"
+			}
+		},
+		{
+			"path": "pages/demo4/demo4",
+			"style": {
+				"navigationBarTitleText": "demo4"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "UNI系列課程",
+		"navigationBarBackgroundColor": "#00E3E3",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#00E3E3",
+		"list": [{
+				"text": "首頁",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/Gou.png",
+				"selectedIconPath": "static/Gou-blue.png"
+			}, {
+				"text": "新聞列表",
+				"pagePath": "pages/list/list",
+				"iconPath": "static/Gou.png",
+				"selectedIconPath": "static/Gou-blue.png"
+			}, {
+				"text": "關於我們",
+				"pagePath": "pages/about/about",
+				"iconPath": "static/Gou.png",
+				"selectedIconPath": "static/Gou-blue.png"
+			},
+			{
+				"text": "demo",
+				"pagePath": "pages/demo/demo",
+				"iconPath": "static/Gou.png",
+				"selectedIconPath": "static/Gou-blue.png"
+			},
+			{
+				"text": "demo4",
+				"pagePath": "pages/demo4/demo4",
+				"iconPath": "static/Gou.png",
+				"selectedIconPath": "static/Gou-blue.png"
+			}
+		]
+	}
+}

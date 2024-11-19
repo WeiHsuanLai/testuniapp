@@ -4,6 +4,9 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<view>
+			<navigator url="/pages/demo1/demo1">跳轉到Demo1</navigator>
+		</view>
 	</view>
 </template>
 

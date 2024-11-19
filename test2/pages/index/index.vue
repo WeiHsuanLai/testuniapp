@@ -23,10 +23,16 @@
 		methods: {
 			clickImg() {
 				uni.showToast({
-					title: "錯誤",
-					icon: "error",
-					mask: true
+					title: "成功",
+					icon: "success",
+					mask: true,
+					duration: 500
 				})
+				setTimeout(() => {
+					uni.navigateTo({
+						url: "/pages/demo1/demo1"
+					})
+				}, 500)
 			}
 		}
 	}

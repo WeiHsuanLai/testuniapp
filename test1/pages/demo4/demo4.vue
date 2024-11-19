@@ -2,6 +2,12 @@
 	<view>
 		<myitem></myitem>
 
+		------------------------------------------
+
+		<view>
+			<button type="button" @click="goBack">返回上一頁</button>
+		</view>
+
 		<form @submit="onSubmit">
 			<!-- 輸入框 -->
 			<view class="row">
@@ -62,6 +68,13 @@
 			},
 			clickSchool(e) {
 				this.selectValue = e.detail.value
+			},
+			goBack() {
+				uni.navigateBack({
+					success(e) {
+						console.log(e);
+					}
+				})
 			}
 		},
 		computed: {

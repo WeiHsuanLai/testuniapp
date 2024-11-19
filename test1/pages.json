@@ -76,8 +76,8 @@
 				"selectedIconPath": "static/Gou-blue.png"
 			},
 			{
-				"text": "demo4",
-				"pagePath": "pages/demo4/demo4",
+				"text": "demo2",
+				"pagePath": "pages/demo2/demo2",
 				"iconPath": "static/Gou.png",
 				"selectedIconPath": "static/Gou-blue.png"
 			}

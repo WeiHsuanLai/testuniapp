@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<pubTitle title="關於我們" subtitle="about page"></pubTitle>
+		<pubTitle title=" 關於我們" subtitle="about page">
+		</pubTitle>
 		<navigator url="/pages/index/index" open-type="reLaunch">首頁</navigator>
 		<navigator url="/pages/list/list" open-type="reLaunch">新聞列表</navigator>
 		---------------------------------------------------------------------

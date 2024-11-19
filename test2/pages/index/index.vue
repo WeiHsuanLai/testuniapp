@@ -18,7 +18,12 @@
 			}
 		},
 		onLoad() {
-			uni.sho
+			uni.showLoading({
+				title: "數據加載中"
+			})
+			setTimeout(() => {
+				uni.hideLoading()
+			}, 2000)
 		},
 		methods: {
 			clickImg() {

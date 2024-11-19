@@ -16,7 +16,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				arr: ['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Q', 'R', 'S', 'T', 'U', 'V']
 			}
 		},
 		onLoad() {
@@ -70,12 +71,21 @@
 				// 	console.log(err);
 				// }
 
-				uni.showModal({
-					title: "手機驗證",
-					editable: true,
-					placeholderText: "請輸入手機號碼",
+				// uni.showModal({
+				// 	title: "手機驗證",
+				// 	editable: true,
+				// 	placeholderText: "請輸入手機號碼",
+				// 	success: res => {
+				// 		console.log(res);
+				// 	}
+				// })
+
+				uni.showActionSheet({
+					title: "商品選擇",
+					itemList: this.arr,
 					success: res => {
 						console.log(res);
+						console.log(this.arr[res.tapIndex]);
 					}
 				})
 			}

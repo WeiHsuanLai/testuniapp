@@ -7,6 +7,9 @@
 		<view>
 			<navigator url="/pages/demo1/demo1">跳轉到Demo1</navigator>
 		</view>
+		<view class="box">
+
+		</view>
 	</view>
 </template>
 
@@ -19,11 +22,12 @@
 		},
 		onLoad() {
 			uni.showLoading({
-				title: "數據加載中"
+				title: "數據加載中",
+				mask: true
 			})
 			setTimeout(() => {
 				uni.hideLoading()
-			}, 2000)
+			}, 300)
 		},
 		methods: {
 			clickImg() {
@@ -77,5 +81,11 @@
 	.title {
 		font-size: 36rpx;
 		color: #8f8f94;
+	}
+
+	.box {
+		width: 200rpx;
+		height: 200rpx;
+		background: pink;
 	}
 </style>

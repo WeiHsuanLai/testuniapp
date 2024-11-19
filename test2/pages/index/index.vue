@@ -18,7 +18,7 @@
 			}
 		},
 		onLoad() {
-
+			uni.sho
 		},
 		methods: {
 			clickImg() {
@@ -26,11 +26,20 @@
 					title: "成功",
 					icon: "success",
 					mask: true,
-					duration: 500
+					duration: 1000,
+					// duration 延遲時間最好設比下方跳轉時間長，因為跳轉也需要時間，設太短連續點可能會變成多次觸發跳轉
+
+					// success() {
+					// 	uni.navigateTo({
+					// 		url: "/pages/demo1/demo1"
+					// 	})
+					// }
 				})
 				setTimeout(() => {
 					uni.navigateTo({
-						url: "/pages/demo1/demo1"
+						url: "/pages/demo1/demo1",
+						animationType: 'slide-in-right', // 動畫類型
+						animationDuration: 900 // 動畫持續時間，單位：毫秒
 					})
 				}, 500)
 			}

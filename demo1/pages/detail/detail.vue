@@ -2,6 +2,16 @@
 	<view class="detail">
 		<view class="title">{{ objData.title }}</view>
 		<view class="content">{{ objData.body }}</view>
+		<view class="comment">
+			<view class="text">評論</view>
+			<view class="row">
+				<view class="top">
+					<view class="name">名稱</view>
+					<view class="mail">郵件</view>
+				</view>
+				<view class="body">主要內容</view>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -51,6 +61,23 @@
 		.content {
 			font-size: 30rpx;
 			color: #666;
+		}
+	}
+
+	.comment {
+		padding: 30rpx;
+		background: #666;
+
+		.text {
+			font-size: 46rpx;
+			margin-bottom: 30rpx;
+		}
+
+		.row {
+			.top {
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 	}
 </style>

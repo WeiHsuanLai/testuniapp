@@ -26,6 +26,13 @@
 			{
 				"navigationBarTitleText" : "詳情頁"
 			}
+		},
+		{
+			"path" : "pages/demo1/demo1",
+			"style" : 
+			{
+				"navigationBarTitleText" : "demo1"
+			}
 		}
 	],
 	"globalStyle": {

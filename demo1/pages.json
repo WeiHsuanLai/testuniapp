@@ -1,0 +1,54 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首頁"
+			}
+		},
+		{
+			"path" : "pages/about/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "關於"
+			}
+		},
+		{
+			"path" : "pages/list/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "新聞"
+			}
+		},
+		{
+			"path" : "pages/detail/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "詳情頁"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"list": [
+			{
+				"text": "新聞",
+				"pagePath": "pages/list/index"
+			},
+			{
+				"text": "首頁",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"text": "關於",
+				"pagePath": "pages/about/index"
+			}
+		]
+	}
+}

@@ -23,6 +23,7 @@
 				});
 				uni.request({
 					url: "https://api.thecatapi.com/v1/images/search",
+					timeout: 3000,
 					success: res => {
 						this.picurl = res.data[0].url; // 設定圖片URL
 					},

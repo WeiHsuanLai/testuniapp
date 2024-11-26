@@ -4,6 +4,9 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<view>
+			<button @click="clean">清除張三</button>
+		</view>
 	</view>
 </template>
 
@@ -16,9 +19,36 @@
 		},
 		onLoad() {
 
+			// 儲存資料到本地 (異步)
+			// uni.setStorage({
+			// 	key: "demo",
+			// 	data: "123123",
+			// 	success: (res) => {
+			// 		console.log(res);
+			// 	}
+			// })
+
+			// 儲存資料到本地 (同步)
+			uni.setStorageSync('mykey1', 'hello')
+			// 下一個代碼會覆蓋上面的代碼
+			uni.setStorageSync('mykey2', 'vue')
+			uni.setStorageSync('mykey3', {
+				name: '張三',
+				age: 22
+			})
+
+			// let mykey = uni.getStorageSync("mykey")
+			// console.log("mykey=", mykey);
 		},
 		methods: {
-
+			clean() {
+				uni.removeStorage({
+					key: 'mykey3',
+					success: function(res) {
+						console.log('清除成功');
+					}
+				});
+			}
 		}
 	}
 </script>

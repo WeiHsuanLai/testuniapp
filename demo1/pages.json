@@ -7,38 +7,33 @@
 			}
 		},
 		{
-			"path" : "pages/about/index",
-			"style" : 
-			{
-				"navigationBarTitleText" : "關於"
+			"path": "pages/about/index",
+			"style": {
+				"navigationBarTitleText": "關於"
 			}
 		},
 		{
-			"path" : "pages/list/index",
-			"style" : 
-			{
-				"navigationBarTitleText" : "新聞"
+			"path": "pages/list/index",
+			"style": {
+				"navigationBarTitleText": "新聞"
 			}
 		},
 		{
-			"path" : "pages/detail/detail",
-			"style" : 
-			{
-				"navigationBarTitleText" : "詳情頁"
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "詳情頁"
 			}
 		},
 		{
-			"path" : "pages/demo1/demo1",
-			"style" : 
-			{
-				"navigationBarTitleText" : "demo1"
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "user"
 			}
 		},
 		{
-			"path" : "pages/demo2/demo2",
-			"style" : 
-			{
-				"navigationBarTitleText" : "demo2"
+			"path": "pages/demo2/demo2",
+			"style": {
+				"navigationBarTitleText": "demo2"
 			}
 		}
 	],
@@ -50,8 +45,7 @@
 	},
 	"uniIdRouter": {},
 	"tabBar": {
-		"list": [
-			{
+		"list": [{
 				"text": "新聞",
 				"pagePath": "pages/list/index"
 			},
@@ -62,6 +56,10 @@
 			{
 				"text": "關於",
 				"pagePath": "pages/about/index"
+			},
+			{
+				"text": "用戶",
+				"pagePath": "pages/user/user"
 			}
 		]
 	}
